@@ -103,7 +103,7 @@ except urllib2.HTTPError, e:
 #switch to json
 try:
         response = json.loads(response)
-	while (response['mugshot_status'] != 'finished'):
+	while (response['mugshot_status'] != 'finished' and response['mugshot_status'] != 'failed'):
 	    time.sleep(4)
 	    print json.dumps(response)
 	    perform_mugshot_status = urllib2.urlopen(mugshot_status_url)
