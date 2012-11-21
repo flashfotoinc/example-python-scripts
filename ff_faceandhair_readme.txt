@@ -21,6 +21,3 @@ Removing Background:
 Downloading and Saving Mask (jpeg)
 
 Downloading and Saving Masked (png)
-
-
-

@@ -86,7 +86,6 @@ except urllib2.HTTPError, e:
 	sys.exit(1)
 #self closes so no need to call perform_segment.close()
 
-
 segment_status_url = '%sapi/segment_status/%s%s' % (options.base_url, image_id, auth_params)
 
 #send the command
